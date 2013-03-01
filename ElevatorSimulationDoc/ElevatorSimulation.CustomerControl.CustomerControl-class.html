@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>ElevatorSimulation.CustomerControl.CustomerControl</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="ElevatorSimulation-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+      <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        <a href="ElevatorSimulation-module.html">Package&nbsp;ElevatorSimulation</a> ::
+        <a href="ElevatorSimulation.CustomerControl-module.html" onclick="show_private();">Module&nbsp;CustomerControl</a> ::
+        Class&nbsp;CustomerControl
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options">[<a href="javascript:void(0);" class="privatelink"
+    onclick="toggle_private();">hide&nbsp;private</a>]</span></td></tr>
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="ElevatorSimulation.CustomerControl.CustomerControl-class.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- ==================== CLASS DESCRIPTION ==================== -->
+<h1 class="epydoc">Class CustomerControl</h1><p class="nomargin-top"><span class="codelink"><a href="ElevatorSimulation.CustomerControl-pysrc.html#CustomerControl">source&nbsp;code</a></span></p>
+<center>
+<center>  <map id="uml_class_diagram_for_elevator_2" name="uml_class_diagram_for_elevator_2">
+<area shape="rect" id="node1" href="ElevatorSimulation.Customer.Customer-class.html" title="&#39038;&#23458;&#31867;&#65292;&#27599;&#19968;&#20010;&#39038;&#23458;&#19968;&#20010;&#23545;&#35937;" alt="" coords="72,230,227,269"/>
+<area shape="rect" id="node1" href="ElevatorSimulation.CustomerControl.CustomerControl-class.html#ArrivalTable" title="&#23458;&#25143;&#21040;&#36798;&#39034;&#24207;&#21015;&#34920;" alt="" coords="17,31,280,49"/>
+<area shape="rect" id="node1" href="ElevatorSimulation.CustomerControl.CustomerControl-class.html#LastArrivalTime" title="&#26368;&#21518;&#19968;&#20301;&#23458;&#25143;&#21040;&#36798;&#26102;&#38388;" alt="" coords="17,49,280,68"/>
+<area shape="rect" id="node1" href="ElevatorSimulation.CustomerControl.CustomerControl-class.html#__init__" title="&#21021;&#22987;&#21270;" alt="" coords="17,71,280,89"/>
+<area shape="rect" id="node1" href="ElevatorSimulation.CustomerControl.CustomerControl-class.html#__str__" title="&#25171;&#21360;&#25152;&#26377;&#39038;&#23458;&#29366;&#24577;" alt="" coords="17,89,280,108"/>
+<area shape="rect" id="node1" href="ElevatorSimulation.CustomerControl.CustomerControl-class.html#AddTimer" title="&#35843;&#29992;&#27492;&#20989;&#25968;&#36890;&#30693;&#26102;&#38388;&#21152;1&#65292;&#26356;&#26032;&#20869;&#37096;&#29366;&#24577;" alt="" coords="17,108,280,127"/>
+<area shape="rect" id="node1" href="ElevatorSimulation.CustomerControl.CustomerControl-class.html#GetIdleCustomer" title="&#33719;&#24471;&#24403;&#21069;&#31354;&#38386;&#29992;&#25143;" alt="" coords="17,127,280,145"/>
+<area shape="rect" id="node1" href="ElevatorSimulation.CustomerControl.CustomerControl-class.html#GetAllCustomer" title="&#33719;&#24471;&#25152;&#26377;Customer" alt="" coords="17,145,280,164"/>
+<area shape="rect" id="node1" href="ElevatorSimulation.CustomerControl.CustomerControl-class.html#GetAllInRequestTime" title="&#33719;&#24471;AllInRequestTime" alt="" coords="17,164,280,183"/>
+<area shape="rect" id="node2" href="ElevatorSimulation.CustomerControl.CustomerControl-class.html" title="&#39038;&#23458;&#25511;&#21046;&#31867;&#65292;&#25511;&#21046;&#25152;&#26377;&#39038;&#23458;&#34892;&#20026;" alt="" coords="5,6,291,189"/>
+<area shape="poly" id="edge2" href="ElevatorSimulation.CustomerControl.CustomerControl-class.html#AllCustomer" title="ElevatorSimulation.CustomerControl.CustomerControl.AllCustomer" alt="" coords="102,185 97,201 95,210 97,218 103,225 98,228 92,220 90,210 92,199 97,184"/>
+<area shape="rect" id="edge2" href="ElevatorSimulation.CustomerControl.CustomerControl-class.html#AllCustomer" title="AllCustomer" alt="" coords="95,201,168,218"/>
+<area shape="poly" id="edge4" href="ElevatorSimulation.CustomerControl.CustomerControl-class.html#AllInRequestTime" title="ElevatorSimulation.CustomerControl.CustomerControl.AllInRequestTime" alt="" coords="176,185 172,219 170,224 165,223 167,218 170,184"/>
+<area shape="rect" id="edge4" href="ElevatorSimulation.CustomerControl.CustomerControl-class.html#AllInRequestTime" title="AllInRequestTime" alt="" coords="172,201,277,218"/>
+</map>
+  <img src="uml_class_diagram_for_elevator_2.gif" alt='' usemap="#uml_class_diagram_for_elevator_2" ismap="ismap" class="graph-without-title" />
+</center>
+</center>
+<hr />
+<p>&#39038;&#23458;&#25511;&#21046;&#31867;&#65292;&#25511;&#21046;&#25152;&#26377;&#39038;&#23458;&#34892;&#20026;</p>
+
+<!-- ==================== INSTANCE METHODS ==================== -->
+<a name="section-InstanceMethods"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Instance Methods</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-InstanceMethods"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="ElevatorSimulation.CustomerControl.CustomerControl-class.html#__init__" class="summary-sig-name">__init__</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">CustomerNum</span>,
+        <span class="summary-sig-arg">SimulateTime</span>)</span><br />
+      &#21021;&#22987;&#21270;</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ElevatorSimulation.CustomerControl-pysrc.html#CustomerControl.__init__">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="ElevatorSimulation.CustomerControl.CustomerControl-class.html#__str__" class="summary-sig-name">__str__</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      &#25171;&#21360;&#25152;&#26377;&#39038;&#23458;&#29366;&#24577;</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ElevatorSimulation.CustomerControl-pysrc.html#CustomerControl.__str__">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="ElevatorSimulation.CustomerControl.CustomerControl-class.html#AddTimer" class="summary-sig-name">AddTimer</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">NowTime</span>)</span><br />
+      &#35843;&#29992;&#27492;&#20989;&#25968;&#36890;&#30693;&#26102;&#38388;&#21152;1&#65292;&#26356;&#26032;&#20869;&#37096;&#29366;&#24577;</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ElevatorSimulation.CustomerControl-pysrc.html#CustomerControl.AddTimer">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">Customer</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="ElevatorSimulation.CustomerControl.CustomerControl-class.html#GetIdleCustomer" class="summary-sig-name">GetIdleCustomer</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      &#33719;&#24471;&#24403;&#21069;&#31354;&#38386;&#29992;&#25143;</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ElevatorSimulation.CustomerControl-pysrc.html#CustomerControl.GetIdleCustomer">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">list</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="ElevatorSimulation.CustomerControl.CustomerControl-class.html#GetAllCustomer" class="summary-sig-name">GetAllCustomer</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      &#33719;&#24471;&#25152;&#26377;Customer</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ElevatorSimulation.CustomerControl-pysrc.html#CustomerControl.GetAllCustomer">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">list</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="ElevatorSimulation.CustomerControl.CustomerControl-class.html#GetAllInRequestTime" class="summary-sig-name">GetAllInRequestTime</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      &#33719;&#24471;AllInRequestTime</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ElevatorSimulation.CustomerControl-pysrc.html#CustomerControl.GetAllInRequestTime">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" class="summary">
+    <p class="indent-wrapped-lines"><b>Inherited from <code>object</code></b>:
+      <code>__delattr__</code>,
+      <code>__format__</code>,
+      <code>__getattribute__</code>,
+      <code>__hash__</code>,
+      <code>__new__</code>,
+      <code>__reduce__</code>,
+      <code>__reduce_ex__</code>,
+      <code>__repr__</code>,
+      <code>__setattr__</code>,
+      <code>__sizeof__</code>,
+      <code>__subclasshook__</code>
+      </p>
+    </td>
+  </tr>
+</table>
+<!-- ==================== INSTANCE VARIABLES ==================== -->
+<a name="section-InstanceVariables"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Instance Variables</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-InstanceVariables"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">Customer</span>
+    </td><td class="summary">
+        <a name="AllCustomer"></a><span class="summary-name">AllCustomer</span><br />
+      &#25152;&#26377;&#23458;&#25143;&#21015;&#34920;
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">Customer</span>
+    </td><td class="summary">
+        <a name="AllInRequestTime"></a><span class="summary-name">AllInRequestTime</span><br />
+      &#25152;&#26377;&#23458;&#25143;&#31561;&#24453;&#26102;&#38388;
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">dict</span>
+    </td><td class="summary">
+        <a name="ArrivalTable"></a><span class="summary-name">ArrivalTable</span><br />
+      &#23458;&#25143;&#21040;&#36798;&#39034;&#24207;&#21015;&#34920;
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">int</span>
+    </td><td class="summary">
+        <a href="ElevatorSimulation.CustomerControl.CustomerControl-class.html#LastArrivalTime" class="summary-name">LastArrivalTime</a><br />
+      &#26368;&#21518;&#19968;&#20301;&#23458;&#25143;&#21040;&#36798;&#26102;&#38388;
+    </td>
+  </tr>
+</table>
+<!-- ==================== PROPERTIES ==================== -->
+<a name="section-Properties"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Properties</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-Properties"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+  <tr>
+    <td colspan="2" class="summary">
+    <p class="indent-wrapped-lines"><b>Inherited from <code>object</code></b>:
+      <code>__class__</code>
+      </p>
+    </td>
+  </tr>
+</table>
+<!-- ==================== METHOD DETAILS ==================== -->
+<a name="section-MethodDetails"></a>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Method Details</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-MethodDetails"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+</table>
+<a name="__init__"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">__init__</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">CustomerNum</span>,
+        <span class="sig-arg">SimulateTime</span>)</span>
+    <br /><em class="fname">(Constructor)</em>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="ElevatorSimulation.CustomerControl-pysrc.html#CustomerControl.__init__">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>&#21021;&#22987;&#21270;</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>CustomerNum</code></strong> (int) - &#24635;&#39038;&#23458;&#25968;</li>
+        <li><strong class="pname"><code>SimulateTime</code></strong> (int) - &#27169;&#25311;&#26102;&#38388;</li>
+    </ul></dd>
+    <dt>Overrides:
+        object.__init__
+    </dt>
+  </dl>
+</td></tr></table>
+</div>
+<a name="__str__"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">__str__</span>(<span class="sig-arg">self</span>)</span>
+    <br /><em class="fname">(Informal representation operator)</em>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="ElevatorSimulation.CustomerControl-pysrc.html#CustomerControl.__str__">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>&#25171;&#21360;&#25152;&#26377;&#39038;&#23458;&#29366;&#24577;</p>
+  <dl class="fields">
+    <dt>Overrides:
+        object.__str__
+    </dt>
+  </dl>
+</td></tr></table>
+</div>
+<a name="AddTimer"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">AddTimer</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">NowTime</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="ElevatorSimulation.CustomerControl-pysrc.html#CustomerControl.AddTimer">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>&#35843;&#29992;&#27492;&#20989;&#25968;&#36890;&#30693;&#26102;&#38388;&#21152;1&#65292;&#26356;&#26032;&#20869;&#37096;&#29366;&#24577;</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>NowTime</code></strong> (int) - &#24403;&#21069;&#26102;&#38388;&#65292;&#19968;&#33324;&#19981;&#20570;&#20351;&#29992;</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="GetIdleCustomer"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">GetIdleCustomer</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="ElevatorSimulation.CustomerControl-pysrc.html#CustomerControl.GetIdleCustomer">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>&#33719;&#24471;&#24403;&#21069;&#31354;&#38386;&#29992;&#25143;</p>
+  <dl class="fields">
+    <dt>Returns: Customer</dt>
+        <dd>&#31354;&#38386;&#39038;&#23458;</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="GetAllCustomer"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">GetAllCustomer</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="ElevatorSimulation.CustomerControl-pysrc.html#CustomerControl.GetAllCustomer">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>&#33719;&#24471;&#25152;&#26377;Customer</p>
+  <dl class="fields">
+    <dt>Returns: list</dt>
+        <dd>&#25152;&#26377;&#23458;&#25143;&#21015;&#34920;</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="GetAllInRequestTime"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">GetAllInRequestTime</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="ElevatorSimulation.CustomerControl-pysrc.html#CustomerControl.GetAllInRequestTime">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>&#33719;&#24471;AllInRequestTime</p>
+  <dl class="fields">
+    <dt>Returns: list</dt>
+        <dd>&#25152;&#26377;&#39038;&#23458;&#35831;&#27714;&#31561;&#24453;&#26102;&#38388;</dd>
+  </dl>
+</td></tr></table>
+</div>
+<br />
+<!-- ==================== INSTANCE VARIABLE DETAILS ==================== -->
+<a name="section-InstanceVariableDetails"></a>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Instance Variable Details</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-InstanceVariableDetails"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+</table>
+<a name="LastArrivalTime"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <h3 class="epydoc">LastArrivalTime</h3>
+  &#26368;&#21518;&#19968;&#20301;&#23458;&#25143;&#21040;&#36798;&#26102;&#38388;
+  <p>&#29992;&#20110;&#20248;&#21270;&#65292;&#22914;&#26524;&#36825;&#20010;&#26102;&#38388;&#27809;&#21464;&#65292;&#21017;&#19981;&#26356;&#26032;</p>
+  <dl class="fields">
+    <dt>Type:</dt>
+      <dd>int</dd>
+  </dl>
+</td></tr></table>
+</div>
+<br />
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="ElevatorSimulation-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+      <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1 on Sun Jan 13 22:32:57 2013
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>

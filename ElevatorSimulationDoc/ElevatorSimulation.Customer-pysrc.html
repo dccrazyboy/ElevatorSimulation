@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>ElevatorSimulation.Customer</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="ElevatorSimulation-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+      <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        <a href="ElevatorSimulation-module.html">Package&nbsp;ElevatorSimulation</a> ::
+        Module&nbsp;Customer
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options">[<a href="javascript:void(0);" class="privatelink"
+    onclick="toggle_private();">hide&nbsp;private</a>]</span></td></tr>
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="ElevatorSimulation.Customer-pysrc.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<h1 class="epydoc">Source Code for <a href="ElevatorSimulation.Customer-module.html" onclick="show_private();">Module ElevatorSimulation.Customer</a></h1>
+<pre class="py-src">
+<a name="L1"></a><tt class="py-lineno">  1</tt>  <tt class="py-line"><tt class="py-comment">#!/usr/bin/env python</tt> </tt>
+<a name="L2"></a><tt class="py-lineno">  2</tt>  <tt class="py-line"><tt class="py-comment">#coding: utf-8</tt> </tt>
+<a name="L3"></a><tt class="py-lineno">  3</tt>  <tt class="py-line"><tt class="py-docstring">'''</tt> </tt>
+<a name="L4"></a><tt class="py-lineno">  4</tt>  <tt class="py-line"><tt class="py-docstring">@author: DC</tt> </tt>
+<a name="L5"></a><tt class="py-lineno">  5</tt>  <tt class="py-line"><tt class="py-docstring">@license: </tt> </tt>
+<a name="L6"></a><tt class="py-lineno">  6</tt>  <tt class="py-line"><tt class="py-docstring">@contact: dc.china@qq.com</tt> </tt>
+<a name="L7"></a><tt class="py-lineno">  7</tt>  <tt class="py-line"><tt class="py-docstring">@see: </tt> </tt>
+<a name="L8"></a><tt class="py-lineno">  8</tt>  <tt class="py-line"><tt class="py-docstring"></tt> </tt>
+<a name="L9"></a><tt class="py-lineno">  9</tt>  <tt class="py-line"><tt class="py-docstring">'''</tt> </tt>
+<a name="L10"></a><tt class="py-lineno"> 10</tt>  <tt class="py-line"><tt class="py-keyword">import</tt> <tt class="py-name">random</tt> </tt>
+<a name="L11"></a><tt class="py-lineno"> 11</tt>  <tt class="py-line"> </tt>
+<a name="Customer"></a><div id="Customer-def"><a name="L12"></a><tt class="py-lineno"> 12</tt> <a class="py-toggle" href="#" id="Customer-toggle" onclick="return toggle('Customer');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="ElevatorSimulation.Customer.Customer-class.html">Customer</a><tt class="py-op">(</tt><tt class="py-base-class">object</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Customer-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="Customer-expanded"><a name="L13"></a><tt class="py-lineno"> 13</tt>  <tt class="py-line">        <tt class="py-docstring">""" &#39038;&#23458;&#31867;&#65292;&#27599;&#19968;&#20010;&#39038;&#23458;&#19968;&#20010;&#23545;&#35937; </tt> </tt>
+<a name="L14"></a><tt class="py-lineno"> 14</tt>  <tt class="py-line"><tt class="py-docstring">        </tt> </tt>
+<a name="L15"></a><tt class="py-lineno"> 15</tt>  <tt class="py-line"><tt class="py-docstring">                @ivar ID: &#39038;&#23458;&#32534;&#21495;</tt> </tt>
+<a name="L16"></a><tt class="py-lineno"> 16</tt>  <tt class="py-line"><tt class="py-docstring">                @type ID: int </tt> </tt>
+<a name="L17"></a><tt class="py-lineno"> 17</tt>  <tt class="py-line"><tt class="py-docstring">        </tt> </tt>
+<a name="L18"></a><tt class="py-lineno"> 18</tt>  <tt class="py-line"><tt class="py-docstring">                @ivar LaunchNum: &#20056;&#22352;&#30005;&#26799;&#27425;&#25968;</tt> </tt>
+<a name="L19"></a><tt class="py-lineno"> 19</tt>  <tt class="py-line"><tt class="py-docstring">                @type LaunchNum: int </tt> </tt>
+<a name="L20"></a><tt class="py-lineno"> 20</tt>  <tt class="py-line"><tt class="py-docstring">        </tt> </tt>
+<a name="L21"></a><tt class="py-lineno"> 21</tt>  <tt class="py-line"><tt class="py-docstring">                @ivar NowFloor: &#24403;&#21069;&#27004;&#23618;</tt> </tt>
+<a name="L22"></a><tt class="py-lineno"> 22</tt>  <tt class="py-line"><tt class="py-docstring">                @type NowFloor: int</tt> </tt>
+<a name="L23"></a><tt class="py-lineno"> 23</tt>  <tt class="py-line"><tt class="py-docstring">        </tt> </tt>
+<a name="L24"></a><tt class="py-lineno"> 24</tt>  <tt class="py-line"><tt class="py-docstring">                @ivar DestFloor: &#30446;&#26631;&#27004;&#23618;</tt> </tt>
+<a name="L25"></a><tt class="py-lineno"> 25</tt>  <tt class="py-line"><tt class="py-docstring">                @type DestFloor: int</tt> </tt>
+<a name="L26"></a><tt class="py-lineno"> 26</tt>  <tt class="py-line"><tt class="py-docstring">        </tt> </tt>
+<a name="L27"></a><tt class="py-lineno"> 27</tt>  <tt class="py-line"><tt class="py-docstring">                @ivar Status: &#24403;&#21069;&#29366;&#24577;</tt> </tt>
+<a name="L28"></a><tt class="py-lineno"> 28</tt>  <tt class="py-line"><tt class="py-docstring"></tt> </tt>
+<a name="L29"></a><tt class="py-lineno"> 29</tt>  <tt class="py-line"><tt class="py-docstring">                        Status&#22495;&#23384;&#20648;&#24403;&#21069;&#30340;&#29366;&#24577;&#65292;&#20998;&#21035;&#20026;&#65306;</tt> </tt>
+<a name="L30"></a><tt class="py-lineno"> 30</tt>  <tt class="py-line"><tt class="py-docstring">                                - 'Idle':</tt> </tt>
+<a name="L31"></a><tt class="py-lineno"> 31</tt>  <tt class="py-line"><tt class="py-docstring">                                        Customer&#22788;&#20110;&#31354;&#38386;&#29366;&#24577;&#65292;&#31561;&#24453;&#30005;&#26799;&#12290;&#25511;&#21046;&#26435;&#20026;&#25511;&#21046;&#31867;&#12290;</tt> </tt>
+<a name="L32"></a><tt class="py-lineno"> 32</tt>  <tt class="py-line"><tt class="py-docstring">                                - 'Waiting':</tt> </tt>
+<a name="L33"></a><tt class="py-lineno"> 33</tt>  <tt class="py-line"><tt class="py-docstring">                                        Customer&#22788;&#20110;&#38543;&#26426;&#20572;&#30041;&#29366;&#24577;&#12290;&#25511;&#21046;&#26435;&#20026;&#33258;&#36523;&#12290;</tt> </tt>
+<a name="L34"></a><tt class="py-lineno"> 34</tt>  <tt class="py-line"><tt class="py-docstring">                                - 'InRequest':</tt> </tt>
+<a name="L35"></a><tt class="py-lineno"> 35</tt>  <tt class="py-line"><tt class="py-docstring">                                        Customer&#24050;&#30830;&#23450;&#20056;&#22352;&#30005;&#26799;&#65292;&#31561;&#24453;&#30005;&#26799;&#21040;&#26469;&#12290;&#25511;&#21046;&#26435;&#20026;&#33258;&#36523;&#12290;</tt> </tt>
+<a name="L36"></a><tt class="py-lineno"> 36</tt>  <tt class="py-line"><tt class="py-docstring">                                - 'InElevator':</tt> </tt>
+<a name="L37"></a><tt class="py-lineno"> 37</tt>  <tt class="py-line"><tt class="py-docstring">                                        Customer&#22788;&#20110;&#30005;&#26799;&#20869;&#12290;&#25511;&#21046;&#26435;&#20026;&#33258;&#36523;&#12290;</tt> </tt>
+<a name="L38"></a><tt class="py-lineno"> 38</tt>  <tt class="py-line"><tt class="py-docstring">                                - 'Boarding':</tt> </tt>
+<a name="L39"></a><tt class="py-lineno"> 39</tt>  <tt class="py-line"><tt class="py-docstring">                                        Customer&#27491;&#22312;&#36827;&#20837;&#30005;&#26799;&#12290;&#25511;&#21046;&#26435;&#20026;&#25511;&#21046;&#31867;&#12290;</tt> </tt>
+<a name="L40"></a><tt class="py-lineno"> 40</tt>  <tt class="py-line"><tt class="py-docstring">                                - 'Landing':</tt> </tt>
+<a name="L41"></a><tt class="py-lineno"> 41</tt>  <tt class="py-line"><tt class="py-docstring">                                        Customer&#27491;&#22312;&#31163;&#24320;&#30005;&#26799;&#12290;&#25511;&#21046;&#26435;&#20026;&#25511;&#21046;&#31867;&#12290;</tt> </tt>
+<a name="L42"></a><tt class="py-lineno"> 42</tt>  <tt class="py-line"><tt class="py-docstring">                                - 'Exiting':</tt> </tt>
+<a name="L43"></a><tt class="py-lineno"> 43</tt>  <tt class="py-line"><tt class="py-docstring">                                        Customer&#27491;&#22312;&#36827;&#20837;&#30005;&#26799;&#12290;&#25511;&#21046;&#26435;&#20026;&#25511;&#21046;&#31867;&#12290;</tt> </tt>
+<a name="L44"></a><tt class="py-lineno"> 44</tt>  <tt class="py-line"><tt class="py-docstring">                @type Status: str</tt> </tt>
+<a name="L45"></a><tt class="py-lineno"> 45</tt>  <tt class="py-line"><tt class="py-docstring">        </tt> </tt>
+<a name="L46"></a><tt class="py-lineno"> 46</tt>  <tt class="py-line"><tt class="py-docstring">                @ivar TimeRemain: &#26576;&#29366;&#24577;&#21097;&#20313;&#26102;&#38388;</tt> </tt>
+<a name="L47"></a><tt class="py-lineno"> 47</tt>  <tt class="py-line"><tt class="py-docstring"></tt> </tt>
+<a name="L48"></a><tt class="py-lineno"> 48</tt>  <tt class="py-line"><tt class="py-docstring">                        &#21482;&#22312;Status&#20026;'Waiting'&#12289;'Boarding'&#12289;'Landing'&#26102;&#26377;&#25928;</tt> </tt>
+<a name="L49"></a><tt class="py-lineno"> 49</tt>  <tt class="py-line"><tt class="py-docstring">                @type TimeRemain: int</tt> </tt>
+<a name="L50"></a><tt class="py-lineno"> 50</tt>  <tt class="py-line"><tt class="py-docstring">        </tt> </tt>
+<a name="L51"></a><tt class="py-lineno"> 51</tt>  <tt class="py-line"><tt class="py-docstring">                @ivar Elevator: &#20851;&#32852;&#30340;&#30005;&#26799;</tt> </tt>
+<a name="L52"></a><tt class="py-lineno"> 52</tt>  <tt class="py-line"><tt class="py-docstring"></tt> </tt>
+<a name="L53"></a><tt class="py-lineno"> 53</tt>  <tt class="py-line"><tt class="py-docstring">                        &#21482;&#22312;Status&#20026;'InElevator'&#12289;'Boarding'&#12289;'Landing'&#26102;&#26377;&#25928;</tt> </tt>
+<a name="L54"></a><tt class="py-lineno"> 54</tt>  <tt class="py-line"><tt class="py-docstring">                @type Elevator: Elevator</tt> </tt>
+<a name="L55"></a><tt class="py-lineno"> 55</tt>  <tt class="py-line"><tt class="py-docstring">        </tt> </tt>
+<a name="L56"></a><tt class="py-lineno"> 56</tt>  <tt class="py-line"><tt class="py-docstring">                @ivar InRequestTime: &#32479;&#35745;&#31561;&#24453;&#26102;&#38388;</tt> </tt>
+<a name="L57"></a><tt class="py-lineno"> 57</tt>  <tt class="py-line"><tt class="py-docstring">                @type InRequestTime: int</tt> </tt>
+<a name="L58"></a><tt class="py-lineno"> 58</tt>  <tt class="py-line"><tt class="py-docstring">                </tt> </tt>
+<a name="L59"></a><tt class="py-lineno"> 59</tt>  <tt class="py-line"><tt class="py-docstring">        """</tt> </tt>
+<a name="Customer.__init__"></a><div id="Customer.__init__-def"><a name="L60"></a><tt class="py-lineno"> 60</tt> <a class="py-toggle" href="#" id="Customer.__init__-toggle" onclick="return toggle('Customer.__init__');">-</a><tt class="py-line">        <tt class="py-keyword">def</tt> <a class="py-def-name" href="ElevatorSimulation.Customer.Customer-class.html#__init__">__init__</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt><tt class="py-param">ID</tt><tt class="py-op">,</tt><tt class="py-param">LaunchNum</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Customer.__init__-collapsed" style="display:none;" pad="+++" indent="++++++++++++"></div><div id="Customer.__init__-expanded"><a name="L61"></a><tt class="py-lineno"> 61</tt>  <tt class="py-line">                <tt class="py-docstring">''' &#21021;&#22987;&#21270; </tt> </tt>
+<a name="L62"></a><tt class="py-lineno"> 62</tt>  <tt class="py-line"><tt class="py-docstring">                        @type ID: int</tt> </tt>
+<a name="L63"></a><tt class="py-lineno"> 63</tt>  <tt class="py-line"><tt class="py-docstring">                        @param ID: &#39038;&#23458;&#32534;&#21495;</tt> </tt>
+<a name="L64"></a><tt class="py-lineno"> 64</tt>  <tt class="py-line"><tt class="py-docstring">                </tt> </tt>
+<a name="L65"></a><tt class="py-lineno"> 65</tt>  <tt class="py-line"><tt class="py-docstring">                        @type LaunchNum: int</tt> </tt>
+<a name="L66"></a><tt class="py-lineno"> 66</tt>  <tt class="py-line"><tt class="py-docstring">                        @param LaunchNum: &#20056;&#22352;&#30005;&#26799;&#27425;&#25968;</tt> </tt>
+<a name="L67"></a><tt class="py-lineno"> 67</tt>  <tt class="py-line"><tt class="py-docstring">                '''</tt> </tt>
+<a name="L68"></a><tt class="py-lineno"> 68</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">ID</tt> <tt class="py-op">=</tt> <tt class="py-name">ID</tt> </tt>
+<a name="L69"></a><tt class="py-lineno"> 69</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">LaunchNum</tt> <tt class="py-op">=</tt> <tt class="py-name">LaunchNum</tt> </tt>
+<a name="L70"></a><tt class="py-lineno"> 70</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">NowFloor</tt> <tt class="py-op">=</tt> <tt class="py-number">1</tt> </tt>
+<a name="L71"></a><tt class="py-lineno"> 71</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">DestFloor</tt> <tt class="py-op">=</tt> <tt class="py-name">random</tt><tt class="py-op">.</tt><tt class="py-name">randint</tt><tt class="py-op">(</tt><tt class="py-number">2</tt><tt class="py-op">,</tt><tt class="py-number">40</tt><tt class="py-op">)</tt> </tt>
+<a name="L72"></a><tt class="py-lineno"> 72</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">Status</tt> <tt class="py-op">=</tt> <tt class="py-string">'Idle'</tt> </tt>
+<a name="L73"></a><tt class="py-lineno"> 73</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">TimeRemain</tt> <tt class="py-op">=</tt> <tt class="py-number">0</tt> </tt>
+<a name="L74"></a><tt class="py-lineno"> 74</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-0" class="py-name" targets="Module ElevatorSimulation.Elevator=ElevatorSimulation.Elevator-module.html,Class ElevatorSimulation.Elevator.Elevator=ElevatorSimulation.Elevator.Elevator-class.html"><a title="ElevatorSimulation.Elevator
+ElevatorSimulation.Elevator.Elevator" class="py-name" href="#" onclick="return doclink('link-0', 'Elevator', 'link-0');">Elevator</a></tt> <tt class="py-op">=</tt> <tt class="py-name">None</tt> </tt>
+<a name="L75"></a><tt class="py-lineno"> 75</tt>  <tt class="py-line"> </tt>
+<a name="L76"></a><tt class="py-lineno"> 76</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">InRequestTime</tt> <tt class="py-op">=</tt> <tt class="py-number">0</tt> </tt>
+</div><a name="L77"></a><tt class="py-lineno"> 77</tt>  <tt class="py-line">                 </tt>
+<a name="L78"></a><tt class="py-lineno"> 78</tt>  <tt class="py-line">                <tt class="py-comment"># &#21021;&#22987;&#21270;&#26085;&#24535;</tt> </tt>
+<a name="L79"></a><tt class="py-lineno"> 79</tt>  <tt class="py-line">                <tt class="py-comment">#self.logger = Logger()</tt> </tt>
+<a name="L80"></a><tt class="py-lineno"> 80</tt>  <tt class="py-line">                 </tt>
+<a name="L81"></a><tt class="py-lineno"> 81</tt>  <tt class="py-line">                <tt class="py-comment">#self.logger.debug('[Customer::__init__] ID = %d,LaunchNum = %d' % (self.ID,self.LaunchNum))</tt> </tt>
+<a name="L82"></a><tt class="py-lineno"> 82</tt>  <tt class="py-line">                 </tt>
+<a name="Customer.__str__"></a><div id="Customer.__str__-def"><a name="L83"></a><tt class="py-lineno"> 83</tt> <a class="py-toggle" href="#" id="Customer.__str__-toggle" onclick="return toggle('Customer.__str__');">-</a><tt class="py-line">        <tt class="py-keyword">def</tt> <a class="py-def-name" href="ElevatorSimulation.Customer.Customer-class.html#__str__">__str__</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Customer.__str__-collapsed" style="display:none;" pad="+++" indent="++++++++++++"></div><div id="Customer.__str__-expanded"><a name="L84"></a><tt class="py-lineno"> 84</tt>  <tt class="py-line">                <tt class="py-docstring">''' &#25171;&#21360;&#39038;&#23458;&#20449;&#24687; '''</tt> </tt>
+<a name="L85"></a><tt class="py-lineno"> 85</tt>  <tt class="py-line">                <tt class="py-keyword">try</tt><tt class="py-op">:</tt> </tt>
+<a name="L86"></a><tt class="py-lineno"> 86</tt>  <tt class="py-line">                        <tt class="py-name">ElevatorTag</tt> <tt class="py-op">=</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-1" class="py-name"><a title="ElevatorSimulation.Elevator
+ElevatorSimulation.Elevator.Elevator" class="py-name" href="#" onclick="return doclink('link-1', 'Elevator', 'link-0');">Elevator</a></tt><tt class="py-op">.</tt><tt class="py-name">Tag</tt> </tt>
+<a name="L87"></a><tt class="py-lineno"> 87</tt>  <tt class="py-line">                <tt class="py-keyword">except</tt><tt class="py-op">:</tt> </tt>
+<a name="L88"></a><tt class="py-lineno"> 88</tt>  <tt class="py-line">                        <tt class="py-name">ElevatorTag</tt> <tt class="py-op">=</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-2" class="py-name"><a title="ElevatorSimulation.Elevator
+ElevatorSimulation.Elevator.Elevator" class="py-name" href="#" onclick="return doclink('link-2', 'Elevator', 'link-0');">Elevator</a></tt> </tt>
+<a name="L89"></a><tt class="py-lineno"> 89</tt>  <tt class="py-line">                <tt class="py-name">printStr</tt> <tt class="py-op">=</tt> <tt class="py-string">'[Customer] ID = %d,Status = %s,NowFloor = %d,DestFloor = %d,LaunchNum = %d,ElevatorTag = %s'</tt> <tt class="py-op">%</tt> \ </tt>
+<a name="L90"></a><tt class="py-lineno"> 90</tt>  <tt class="py-line">                                   <tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">ID</tt><tt class="py-op">,</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">Status</tt><tt class="py-op">,</tt>\ </tt>
+<a name="L91"></a><tt class="py-lineno"> 91</tt>  <tt class="py-line">                                        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">NowFloor</tt><tt class="py-op">,</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">DestFloor</tt><tt class="py-op">,</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">LaunchNum</tt><tt class="py-op">,</tt><tt class="py-name">ElevatorTag</tt><tt class="py-op">)</tt> </tt>
+<a name="L92"></a><tt class="py-lineno"> 92</tt>  <tt class="py-line">                <tt class="py-keyword">return</tt> <tt class="py-name">printStr</tt> </tt>
+</div><a name="L93"></a><tt class="py-lineno"> 93</tt>  <tt class="py-line"> </tt>
+<a name="Customer.AddTimer"></a><div id="Customer.AddTimer-def"><a name="L94"></a><tt class="py-lineno"> 94</tt> <a class="py-toggle" href="#" id="Customer.AddTimer-toggle" onclick="return toggle('Customer.AddTimer');">-</a><tt class="py-line">        <tt class="py-keyword">def</tt> <a class="py-def-name" href="ElevatorSimulation.Customer.Customer-class.html#AddTimer">AddTimer</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt><tt class="py-param">NowTime</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Customer.AddTimer-collapsed" style="display:none;" pad="+++" indent="++++++++++++"></div><div id="Customer.AddTimer-expanded"><a name="L95"></a><tt class="py-lineno"> 95</tt>  <tt class="py-line">                <tt class="py-docstring">''' &#35843;&#29992;&#27492;&#20989;&#25968;&#36890;&#30693;&#26102;&#38388;&#21152;1&#65292;&#26356;&#26032;&#20869;&#37096;&#29366;&#24577;</tt> </tt>
+<a name="L96"></a><tt class="py-lineno"> 96</tt>  <tt class="py-line"><tt class="py-docstring">                        @type NowTime: int</tt> </tt>
+<a name="L97"></a><tt class="py-lineno"> 97</tt>  <tt class="py-line"><tt class="py-docstring">                        @param NowTime: &#24403;&#21069;&#26102;&#38388;&#65292;&#19968;&#33324;&#19981;&#20570;&#20351;&#29992;</tt> </tt>
+<a name="L98"></a><tt class="py-lineno"> 98</tt>  <tt class="py-line"><tt class="py-docstring">                '''</tt> </tt>
+<a name="L99"></a><tt class="py-lineno"> 99</tt>  <tt class="py-line">                <tt class="py-keyword">try</tt><tt class="py-op">:</tt> </tt>
+<a name="L100"></a><tt class="py-lineno">100</tt>  <tt class="py-line">                        <tt class="py-comment">#print self</tt> </tt>
+<a name="L101"></a><tt class="py-lineno">101</tt>  <tt class="py-line">                        <tt class="py-comment"># &#36827;&#34892;&#29366;&#24577;&#36716;&#31227;</tt> </tt>
+<a name="L102"></a><tt class="py-lineno">102</tt>  <tt class="py-line">                        <tt class="py-keyword">if</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">Status</tt> <tt class="py-op">==</tt> <tt class="py-string">'Idle'</tt><tt class="py-op">:</tt> </tt>
+<a name="L103"></a><tt class="py-lineno">103</tt>  <tt class="py-line">                                <tt class="py-comment"># &#31561;&#24453;&#25511;&#21046;&#31867;&#35843;&#24230;&#65292;&#33258;&#36523;&#19981;&#20570;&#20219;&#20309;&#22788;&#29702;</tt> </tt>
+<a name="L104"></a><tt class="py-lineno">104</tt>  <tt class="py-line">                                <tt class="py-keyword">return</tt> </tt>
+<a name="L105"></a><tt class="py-lineno">105</tt>  <tt class="py-line">                         </tt>
+<a name="L106"></a><tt class="py-lineno">106</tt>  <tt class="py-line">                        <tt class="py-keyword">if</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">Status</tt> <tt class="py-op">==</tt> <tt class="py-string">'Waiting'</tt><tt class="py-op">:</tt> </tt>
+<a name="L107"></a><tt class="py-lineno">107</tt>  <tt class="py-line">                                <tt class="py-comment"># &#24403;&#21069;&#29366;&#24577;&#20026;Waiting&#65292;&#36827;&#34892;&#21028;&#26029;</tt> </tt>
+<a name="L108"></a><tt class="py-lineno">108</tt>  <tt class="py-line">                                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">TimeRemain</tt> <tt class="py-op">=</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">TimeRemain</tt> <tt class="py-op">-</tt> <tt class="py-number">1</tt> </tt>
+<a name="L109"></a><tt class="py-lineno">109</tt>  <tt class="py-line">                                <tt class="py-keyword">if</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">TimeRemain</tt> <tt class="py-op">==</tt> <tt class="py-number">0</tt><tt class="py-op">:</tt> </tt>
+<a name="L110"></a><tt class="py-lineno">110</tt>  <tt class="py-line">                                        <tt class="py-keyword">if</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">LaunchNum</tt> <tt class="py-op">&gt;</tt> <tt class="py-number">0</tt><tt class="py-op">:</tt> </tt>
+<a name="L111"></a><tt class="py-lineno">111</tt>  <tt class="py-line">                                                <tt class="py-comment"># &#35831;&#27714;&#19979;&#19968;&#27425;&#30005;&#26799;</tt> </tt>
+<a name="L112"></a><tt class="py-lineno">112</tt>  <tt class="py-line">                                                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">Status</tt> <tt class="py-op">=</tt> <tt class="py-string">'Idle'</tt> </tt>
+<a name="L113"></a><tt class="py-lineno">113</tt>  <tt class="py-line">                                                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">DestFloor</tt> <tt class="py-op">=</tt> <tt class="py-name">random</tt><tt class="py-op">.</tt><tt class="py-name">choice</tt><tt class="py-op">(</tt><tt class="py-name">range</tt><tt class="py-op">(</tt><tt class="py-number">1</tt><tt class="py-op">,</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">NowFloor</tt><tt class="py-op">)</tt> <tt class="py-op">+</tt> <tt class="py-name">range</tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">NowFloor</tt> <tt class="py-op">+</tt> <tt class="py-number">1</tt><tt class="py-op">,</tt><tt class="py-number">41</tt><tt class="py-op">)</tt><tt class="py-op">)</tt> </tt>
+<a name="L114"></a><tt class="py-lineno">114</tt>  <tt class="py-line">                                                <tt class="py-keyword">return</tt> </tt>
+<a name="L115"></a><tt class="py-lineno">115</tt>  <tt class="py-line">                                        <tt class="py-keyword">elif</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">LaunchNum</tt> <tt class="py-op">==</tt> <tt class="py-number">0</tt><tt class="py-op">:</tt> </tt>
+<a name="L116"></a><tt class="py-lineno">116</tt>  <tt class="py-line">                                                <tt class="py-comment"># &#39038;&#23458;&#23436;&#25104;&#25152;&#26377;&#20056;&#22352;&#65292;&#22238;&#21040;1&#27004;</tt> </tt>
+<a name="L117"></a><tt class="py-lineno">117</tt>  <tt class="py-line">                                                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">Status</tt> <tt class="py-op">=</tt> <tt class="py-string">'Idle'</tt> </tt>
+<a name="L118"></a><tt class="py-lineno">118</tt>  <tt class="py-line">                                                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">DestFloor</tt> <tt class="py-op">=</tt> <tt class="py-number">1</tt> </tt>
+<a name="L119"></a><tt class="py-lineno">119</tt>  <tt class="py-line">                                                <tt class="py-keyword">return</tt> </tt>
+<a name="L120"></a><tt class="py-lineno">120</tt>  <tt class="py-line">                                        <tt class="py-keyword">else</tt><tt class="py-op">:</tt> </tt>
+<a name="L121"></a><tt class="py-lineno">121</tt>  <tt class="py-line">                                                <tt class="py-keyword">assert</tt> <tt class="py-name">False</tt> </tt>
+<a name="L122"></a><tt class="py-lineno">122</tt>  <tt class="py-line">                                <tt class="py-keyword">return</tt> </tt>
+<a name="L123"></a><tt class="py-lineno">123</tt>  <tt class="py-line"> </tt>
+<a name="L124"></a><tt class="py-lineno">124</tt>  <tt class="py-line">                        <tt class="py-keyword">if</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">Status</tt> <tt class="py-op">==</tt> <tt class="py-string">'InRequest'</tt><tt class="py-op">:</tt> </tt>
+<a name="L125"></a><tt class="py-lineno">125</tt>  <tt class="py-line">                                <tt class="py-comment"># &#24403;&#21069;&#29366;&#24577;&#22312;Elevator&#31561;&#24453;&#38431;&#21015;&#20013;&#65292;&#30001;&#25511;&#21046;&#31867;&#25511;&#21046;&#19978;&#30005;&#26799;</tt> </tt>
+<a name="L126"></a><tt class="py-lineno">126</tt>  <tt class="py-line">                                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">InRequestTime</tt> <tt class="py-op">=</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">InRequestTime</tt> <tt class="py-op">+</tt> <tt class="py-number">1</tt> </tt>
+<a name="L127"></a><tt class="py-lineno">127</tt>  <tt class="py-line">                                <tt class="py-keyword">return</tt> </tt>
+<a name="L128"></a><tt class="py-lineno">128</tt>  <tt class="py-line">                         </tt>
+<a name="L129"></a><tt class="py-lineno">129</tt>  <tt class="py-line">                        <tt class="py-keyword">if</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">Status</tt> <tt class="py-op">==</tt> <tt class="py-string">'InElevator'</tt><tt class="py-op">:</tt> </tt>
+<a name="L130"></a><tt class="py-lineno">130</tt>  <tt class="py-line">                                <tt class="py-comment"># &#24403;&#21069;&#29366;&#24577;&#22312;Elevator&#20013;&#65292;&#30001;&#25511;&#21046;&#31867;&#25511;&#21046;&#19979;&#30005;&#26799;</tt> </tt>
+<a name="L131"></a><tt class="py-lineno">131</tt>  <tt class="py-line">                                <tt class="py-keyword">return</tt> </tt>
+<a name="L132"></a><tt class="py-lineno">132</tt>  <tt class="py-line">                         </tt>
+<a name="L133"></a><tt class="py-lineno">133</tt>  <tt class="py-line">                        <tt class="py-keyword">if</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">Status</tt> <tt class="py-op">==</tt> <tt class="py-string">'Boarding'</tt><tt class="py-op">:</tt> </tt>
+<a name="L134"></a><tt class="py-lineno">134</tt>  <tt class="py-line">                                <tt class="py-comment"># &#27491;&#22312;&#36827;&#20837;&#30005;&#26799;&#65292;&#31561;&#24453;</tt> </tt>
+<a name="L135"></a><tt class="py-lineno">135</tt>  <tt class="py-line">                                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">TimeRemain</tt> <tt class="py-op">=</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">TimeRemain</tt> <tt class="py-op">-</tt> <tt class="py-number">1</tt> </tt>
+<a name="L136"></a><tt class="py-lineno">136</tt>  <tt class="py-line">                                <tt class="py-keyword">if</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">TimeRemain</tt> <tt class="py-op">==</tt> <tt class="py-number">0</tt><tt class="py-op">:</tt> </tt>
+<a name="L137"></a><tt class="py-lineno">137</tt>  <tt class="py-line">                                        <tt class="py-comment"># &#36827;&#20837;&#30005;&#26799;&#23436;&#27605;</tt> </tt>
+<a name="L138"></a><tt class="py-lineno">138</tt>  <tt class="py-line">                                        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">Status</tt> <tt class="py-op">=</tt> <tt class="py-string">'InElevator'</tt> </tt>
+<a name="L139"></a><tt class="py-lineno">139</tt>  <tt class="py-line">                                <tt class="py-keyword">return</tt> </tt>
+<a name="L140"></a><tt class="py-lineno">140</tt>  <tt class="py-line"> </tt>
+<a name="L141"></a><tt class="py-lineno">141</tt>  <tt class="py-line">                        <tt class="py-keyword">if</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">Status</tt> <tt class="py-op">==</tt> <tt class="py-string">'Landing'</tt><tt class="py-op">:</tt> </tt>
+<a name="L142"></a><tt class="py-lineno">142</tt>  <tt class="py-line">                                <tt class="py-comment"># &#36864;&#20986;&#30005;&#26799;</tt> </tt>
+<a name="L143"></a><tt class="py-lineno">143</tt>  <tt class="py-line">                                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">TimeRemain</tt> <tt class="py-op">=</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">TimeRemain</tt> <tt class="py-op">-</tt> <tt class="py-number">1</tt> </tt>
+<a name="L144"></a><tt class="py-lineno">144</tt>  <tt class="py-line">                                <tt class="py-keyword">if</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">TimeRemain</tt> <tt class="py-op">==</tt> <tt class="py-number">0</tt><tt class="py-op">:</tt> </tt>
+<a name="L145"></a><tt class="py-lineno">145</tt>  <tt class="py-line">                                        <tt class="py-comment"># &#36864;&#20986;&#30005;&#26799;&#23436;&#27605;</tt> </tt>
+<a name="L146"></a><tt class="py-lineno">146</tt>  <tt class="py-line">                                        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-3" class="py-name"><a title="ElevatorSimulation.Elevator
+ElevatorSimulation.Elevator.Elevator" class="py-name" href="#" onclick="return doclink('link-3', 'Elevator', 'link-0');">Elevator</a></tt> <tt class="py-op">=</tt> <tt class="py-name">None</tt> </tt>
+<a name="L147"></a><tt class="py-lineno">147</tt>  <tt class="py-line">                                        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">LaunchNum</tt> <tt class="py-op">=</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">LaunchNum</tt> <tt class="py-op">-</tt> <tt class="py-number">1</tt> </tt>
+<a name="L148"></a><tt class="py-lineno">148</tt>  <tt class="py-line">                                        <tt class="py-keyword">assert</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">TimeRemain</tt> <tt class="py-op">&gt;=</tt> <tt class="py-number">0</tt> </tt>
+<a name="L149"></a><tt class="py-lineno">149</tt>  <tt class="py-line">                                        <tt class="py-comment"># &#21018;&#19979;&#30005;&#26799;&#65292;&#21028;&#26029;&#20056;&#22352;&#26159;&#21542;&#32467;&#26463;</tt> </tt>
+<a name="L150"></a><tt class="py-lineno">150</tt>  <tt class="py-line">                                        <tt class="py-keyword">if</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">LaunchNum</tt> <tt class="py-op">&lt;</tt> <tt class="py-number">0</tt><tt class="py-op">:</tt> </tt>
+<a name="L151"></a><tt class="py-lineno">151</tt>  <tt class="py-line">                                                <tt class="py-comment"># &#20056;&#22352;&#32467;&#26463;&#65292;&#27492;&#20056;&#23458;&#36864;&#20986;</tt> </tt>
+<a name="L152"></a><tt class="py-lineno">152</tt>  <tt class="py-line">                                                <tt class="py-keyword">assert</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">NowFloor</tt> <tt class="py-op">==</tt> <tt class="py-number">1</tt> </tt>
+<a name="L153"></a><tt class="py-lineno">153</tt>  <tt class="py-line">                                                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">Status</tt> <tt class="py-op">=</tt> <tt class="py-string">'Exiting'</tt> </tt>
+<a name="L154"></a><tt class="py-lineno">154</tt>  <tt class="py-line">                                                <tt class="py-keyword">return</tt> </tt>
+<a name="L155"></a><tt class="py-lineno">155</tt>  <tt class="py-line">                                        <tt class="py-keyword">else</tt><tt class="py-op">:</tt> </tt>
+<a name="L156"></a><tt class="py-lineno">156</tt>  <tt class="py-line">                                                <tt class="py-comment"># &#36824;&#38656;&#35201;&#20056;&#22352;&#65292;&#38543;&#26426;&#20572;&#30041;</tt> </tt>
+<a name="L157"></a><tt class="py-lineno">157</tt>  <tt class="py-line">                                                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">Status</tt> <tt class="py-op">=</tt> <tt class="py-string">'Waiting'</tt> </tt>
+<a name="L158"></a><tt class="py-lineno">158</tt>  <tt class="py-line">                                                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">TimeRemain</tt> <tt class="py-op">=</tt> <tt class="py-name">random</tt><tt class="py-op">.</tt><tt class="py-name">randint</tt><tt class="py-op">(</tt><tt class="py-number">10</tt><tt class="py-op">,</tt><tt class="py-number">120</tt><tt class="py-op">)</tt> </tt>
+<a name="L159"></a><tt class="py-lineno">159</tt>  <tt class="py-line">                                                <tt class="py-keyword">return</tt> </tt>
+<a name="L160"></a><tt class="py-lineno">160</tt>  <tt class="py-line">                                <tt class="py-keyword">return</tt> </tt>
+<a name="L161"></a><tt class="py-lineno">161</tt>  <tt class="py-line"> </tt>
+<a name="L162"></a><tt class="py-lineno">162</tt>  <tt class="py-line">                        <tt class="py-keyword">if</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">Status</tt> <tt class="py-op">==</tt> <tt class="py-string">'Exiting'</tt><tt class="py-op">:</tt> </tt>
+<a name="L163"></a><tt class="py-lineno">163</tt>  <tt class="py-line">                                <tt class="py-comment"># &#31561;&#24453;&#25511;&#21046;&#31867;&#35843;&#24230;&#65292;&#33258;&#36523;&#19981;&#20570;&#20219;&#20309;&#22788;&#29702;</tt> </tt>
+<a name="L164"></a><tt class="py-lineno">164</tt>  <tt class="py-line">                                <tt class="py-keyword">return</tt> </tt>
+<a name="L165"></a><tt class="py-lineno">165</tt>  <tt class="py-line">                         </tt>
+<a name="L166"></a><tt class="py-lineno">166</tt>  <tt class="py-line">                <tt class="py-keyword">finally</tt><tt class="py-op">:</tt> </tt>
+<a name="L167"></a><tt class="py-lineno">167</tt>  <tt class="py-line">                        <tt class="py-keyword">pass</tt> </tt>
+<a name="L168"></a><tt class="py-lineno">168</tt>  <tt class="py-line">                         </tt>
+<a name="L169"></a><tt class="py-lineno">169</tt>  <tt class="py-line">                <tt class="py-comment"># self.Status&#19981;&#22312;&#29366;&#24577;&#34920;&#20013;</tt> </tt>
+<a name="L170"></a><tt class="py-lineno">170</tt>  <tt class="py-line">                <tt class="py-keyword">assert</tt> <tt class="py-name">False</tt> </tt>
+</div><a name="L171"></a><tt class="py-lineno">171</tt>  <tt class="py-line"> </tt>
+<a name="Customer.InRequestNotify"></a><div id="Customer.InRequestNotify-def"><a name="L172"></a><tt class="py-lineno">172</tt> <a class="py-toggle" href="#" id="Customer.InRequestNotify-toggle" onclick="return toggle('Customer.InRequestNotify');">-</a><tt class="py-line">        <tt class="py-keyword">def</tt> <a class="py-def-name" href="ElevatorSimulation.Customer.Customer-class.html#InRequestNotify">InRequestNotify</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt><tt class="py-param">elevator</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Customer.InRequestNotify-collapsed" style="display:none;" pad="+++" indent="++++++++++++"></div><div id="Customer.InRequestNotify-expanded"><a name="L173"></a><tt class="py-lineno">173</tt>  <tt class="py-line">                <tt class="py-docstring">''' &#35831;&#27714;&#30005;&#26799;&#26102;&#27492;&#20989;&#25968;&#34987;&#35843;&#29992; </tt> </tt>
+<a name="L174"></a><tt class="py-lineno">174</tt>  <tt class="py-line"><tt class="py-docstring">                        @type elevator: Elevator</tt> </tt>
+<a name="L175"></a><tt class="py-lineno">175</tt>  <tt class="py-line"><tt class="py-docstring">                        @param elevator: &#35831;&#27714;&#30340;&#30005;&#26799;</tt> </tt>
+<a name="L176"></a><tt class="py-lineno">176</tt>  <tt class="py-line"><tt class="py-docstring">                </tt> </tt>
+<a name="L177"></a><tt class="py-lineno">177</tt>  <tt class="py-line"><tt class="py-docstring">                '''</tt> </tt>
+<a name="L178"></a><tt class="py-lineno">178</tt>  <tt class="py-line">                <tt class="py-comment"># &#24403; self.Status == 'Idle'&#26102;&#25165;&#33021;&#35843;&#29992;</tt> </tt>
+<a name="L179"></a><tt class="py-lineno">179</tt>  <tt class="py-line">                <tt class="py-keyword">assert</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">Status</tt> <tt class="py-op">==</tt> <tt class="py-string">'Idle'</tt> </tt>
+<a name="L180"></a><tt class="py-lineno">180</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">Status</tt> <tt class="py-op">=</tt> <tt class="py-string">'InRequest'</tt> </tt>
+<a name="L181"></a><tt class="py-lineno">181</tt>  <tt class="py-line">                <tt class="py-comment"># &#27492;&#26102;&#31561;&#24453;Elevator</tt> </tt>
+<a name="L182"></a><tt class="py-lineno">182</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-4" class="py-name"><a title="ElevatorSimulation.Elevator
+ElevatorSimulation.Elevator.Elevator" class="py-name" href="#" onclick="return doclink('link-4', 'Elevator', 'link-0');">Elevator</a></tt> <tt class="py-op">=</tt> <tt class="py-name">elevator</tt> </tt>
+</div><a name="L183"></a><tt class="py-lineno">183</tt>  <tt class="py-line">                <tt class="py-comment">#print '%s InRequestNotify %s' % (self,elevator)</tt> </tt>
+<a name="L184"></a><tt class="py-lineno">184</tt>  <tt class="py-line"> </tt>
+<a name="Customer.BoardingNotify"></a><div id="Customer.BoardingNotify-def"><a name="L185"></a><tt class="py-lineno">185</tt> <a class="py-toggle" href="#" id="Customer.BoardingNotify-toggle" onclick="return toggle('Customer.BoardingNotify');">-</a><tt class="py-line">        <tt class="py-keyword">def</tt> <a class="py-def-name" href="ElevatorSimulation.Customer.Customer-class.html#BoardingNotify">BoardingNotify</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt><tt class="py-param">elevator</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Customer.BoardingNotify-collapsed" style="display:none;" pad="+++" indent="++++++++++++"></div><div id="Customer.BoardingNotify-expanded"><a name="L186"></a><tt class="py-lineno">186</tt>  <tt class="py-line">                <tt class="py-docstring">''' &#36827;&#20837;&#30005;&#26799;&#26102;&#27492;&#20989;&#25968;&#34987;&#35843;&#29992; </tt> </tt>
+<a name="L187"></a><tt class="py-lineno">187</tt>  <tt class="py-line"><tt class="py-docstring">                        @type elevator: Elevator</tt> </tt>
+<a name="L188"></a><tt class="py-lineno">188</tt>  <tt class="py-line"><tt class="py-docstring">                        @param elevator: &#23558;&#36827;&#20837;&#30340;&#30005;&#26799;</tt> </tt>
+<a name="L189"></a><tt class="py-lineno">189</tt>  <tt class="py-line"><tt class="py-docstring">                </tt> </tt>
+<a name="L190"></a><tt class="py-lineno">190</tt>  <tt class="py-line"><tt class="py-docstring">                '''</tt> </tt>
+<a name="L191"></a><tt class="py-lineno">191</tt>  <tt class="py-line">                <tt class="py-comment"># &#24403; self.Status == 'InRequest'&#26102;&#25165;&#33021;&#35843;&#29992;</tt> </tt>
+<a name="L192"></a><tt class="py-lineno">192</tt>  <tt class="py-line">                <tt class="py-keyword">assert</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">Status</tt> <tt class="py-op">==</tt> <tt class="py-string">'InRequest'</tt> </tt>
+<a name="L193"></a><tt class="py-lineno">193</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">Status</tt> <tt class="py-op">=</tt> <tt class="py-string">'Boarding'</tt> </tt>
+<a name="L194"></a><tt class="py-lineno">194</tt>  <tt class="py-line">                <tt class="py-comment"># &#27492;&#26102;&#30340;&#26102;&#38388;&#25511;&#21046;&#21644;Elevator&#30456;&#21516;</tt> </tt>
+<a name="L195"></a><tt class="py-lineno">195</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">TimeRemain</tt> <tt class="py-op">=</tt> <tt class="py-name">elevator</tt><tt class="py-op">.</tt><tt class="py-name">BoardTime</tt> </tt>
+<a name="L196"></a><tt class="py-lineno">196</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-5" class="py-name"><a title="ElevatorSimulation.Elevator
+ElevatorSimulation.Elevator.Elevator" class="py-name" href="#" onclick="return doclink('link-5', 'Elevator', 'link-0');">Elevator</a></tt> <tt class="py-op">=</tt> <tt class="py-name">elevator</tt> </tt>
+</div><a name="L197"></a><tt class="py-lineno">197</tt>  <tt class="py-line">                <tt class="py-comment">#print '%s BoardingNotify %s' % (self,elevator)</tt> </tt>
+<a name="L198"></a><tt class="py-lineno">198</tt>  <tt class="py-line">                 </tt>
+<a name="L199"></a><tt class="py-lineno">199</tt>  <tt class="py-line">                 </tt>
+<a name="Customer.InElevatorNotify"></a><div id="Customer.InElevatorNotify-def"><a name="L200"></a><tt class="py-lineno">200</tt> <a class="py-toggle" href="#" id="Customer.InElevatorNotify-toggle" onclick="return toggle('Customer.InElevatorNotify');">-</a><tt class="py-line">        <tt class="py-keyword">def</tt> <a class="py-def-name" href="ElevatorSimulation.Customer.Customer-class.html#InElevatorNotify">InElevatorNotify</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt><tt class="py-param">elevator</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Customer.InElevatorNotify-collapsed" style="display:none;" pad="+++" indent="++++++++++++"></div><div id="Customer.InElevatorNotify-expanded"><a name="L201"></a><tt class="py-lineno">201</tt>  <tt class="py-line">                <tt class="py-docstring">''' &#36827;&#20837;&#30005;&#26799;&#21518;&#65292;&#30005;&#26799;&#22788;&#20110;&#36816;&#34892;&#29366;&#24577;&#27492;&#20989;&#25968;&#34987;&#35843;&#29992; </tt> </tt>
+<a name="L202"></a><tt class="py-lineno">202</tt>  <tt class="py-line"><tt class="py-docstring">                        @type elevator: Elevator</tt> </tt>
+<a name="L203"></a><tt class="py-lineno">203</tt>  <tt class="py-line"><tt class="py-docstring">                        @param elevator: &#20851;&#32852;&#30005;&#26799;</tt> </tt>
+<a name="L204"></a><tt class="py-lineno">204</tt>  <tt class="py-line"><tt class="py-docstring">                </tt> </tt>
+<a name="L205"></a><tt class="py-lineno">205</tt>  <tt class="py-line"><tt class="py-docstring">                '''</tt> </tt>
+<a name="L206"></a><tt class="py-lineno">206</tt>  <tt class="py-line">                <tt class="py-comment"># &#24403; self.Status == 'Boarding' or 'InElevator'&#26102;&#25165;&#33021;&#35843;&#29992;</tt> </tt>
+<a name="L207"></a><tt class="py-lineno">207</tt>  <tt class="py-line">                <tt class="py-keyword">assert</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">Status</tt> <tt class="py-op">==</tt> <tt class="py-string">'Boarding'</tt> <tt class="py-keyword">or</tt> <tt class="py-string">'InElevator'</tt> </tt>
+<a name="L208"></a><tt class="py-lineno">208</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">Status</tt> <tt class="py-op">=</tt> <tt class="py-string">'InElevator'</tt> </tt>
+<a name="L209"></a><tt class="py-lineno">209</tt>  <tt class="py-line">                <tt class="py-comment"># &#24403;&#21069;&#20301;&#32622;&#21644;&#30005;&#26799;&#30456;&#21516;</tt> </tt>
+<a name="L210"></a><tt class="py-lineno">210</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">NowFloor</tt> <tt class="py-op">=</tt> <tt class="py-name">elevator</tt><tt class="py-op">.</tt><tt class="py-name">NowFloor</tt> </tt>
+<a name="L211"></a><tt class="py-lineno">211</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-6" class="py-name"><a title="ElevatorSimulation.Elevator
+ElevatorSimulation.Elevator.Elevator" class="py-name" href="#" onclick="return doclink('link-6', 'Elevator', 'link-0');">Elevator</a></tt> <tt class="py-op">=</tt> <tt class="py-name">elevator</tt> </tt>
+</div><a name="L212"></a><tt class="py-lineno">212</tt>  <tt class="py-line">                <tt class="py-comment">#print '%s InElevatorNotify %s' % (self,elevator)</tt> </tt>
+<a name="L213"></a><tt class="py-lineno">213</tt>  <tt class="py-line"> </tt>
+<a name="Customer.LandingNotify"></a><div id="Customer.LandingNotify-def"><a name="L214"></a><tt class="py-lineno">214</tt> <a class="py-toggle" href="#" id="Customer.LandingNotify-toggle" onclick="return toggle('Customer.LandingNotify');">-</a><tt class="py-line">        <tt class="py-keyword">def</tt> <a class="py-def-name" href="ElevatorSimulation.Customer.Customer-class.html#LandingNotify">LandingNotify</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt><tt class="py-param">elevator</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Customer.LandingNotify-collapsed" style="display:none;" pad="+++" indent="++++++++++++"></div><div id="Customer.LandingNotify-expanded"><a name="L215"></a><tt class="py-lineno">215</tt>  <tt class="py-line">                <tt class="py-docstring">''' &#31163;&#24320;&#30005;&#26799;&#27492;&#20989;&#25968;&#34987;&#35843;&#29992; </tt> </tt>
+<a name="L216"></a><tt class="py-lineno">216</tt>  <tt class="py-line"><tt class="py-docstring">                        @type elevator: Elevator</tt> </tt>
+<a name="L217"></a><tt class="py-lineno">217</tt>  <tt class="py-line"><tt class="py-docstring">                        @param elevator: &#23558;&#31163;&#24320;&#30340;&#30005;&#26799;</tt> </tt>
+<a name="L218"></a><tt class="py-lineno">218</tt>  <tt class="py-line"><tt class="py-docstring">                </tt> </tt>
+<a name="L219"></a><tt class="py-lineno">219</tt>  <tt class="py-line"><tt class="py-docstring">                '''</tt> </tt>
+<a name="L220"></a><tt class="py-lineno">220</tt>  <tt class="py-line">                <tt class="py-comment"># &#24403; self.Status == 'InElevator'&#26102;&#25165;&#33021;&#35843;&#29992;</tt> </tt>
+<a name="L221"></a><tt class="py-lineno">221</tt>  <tt class="py-line">                <tt class="py-comment"># &#30830;&#35748;&#21040;&#36798;&#35831;&#27714;&#27004;&#23618;</tt> </tt>
+<a name="L222"></a><tt class="py-lineno">222</tt>  <tt class="py-line">                <tt class="py-keyword">assert</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">Status</tt> <tt class="py-op">==</tt> <tt class="py-string">'InElevator'</tt> </tt>
+<a name="L223"></a><tt class="py-lineno">223</tt>  <tt class="py-line">                <tt class="py-comment"># &#22240;&#20026;&#23384;&#22312;&#30005;&#26799;&#26102;&#38388;&#20808;&#21152;1&#65292;&#20154;&#26102;&#38388;&#21518;&#21152;1&#30340;&#38382;&#39064;&#65292;&#25152;&#20197;&#36825;&#37324;&#20154;&#30340;&#27004;&#23618;&#19981;&#21487;&#33021;&#31561;&#20110;&#30005;&#26799;&#30340;&#27004;&#23618;&#12290;</tt> </tt>
+<a name="L224"></a><tt class="py-lineno">224</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">NowFloor</tt> <tt class="py-op">=</tt> <tt class="py-name">elevator</tt><tt class="py-op">.</tt><tt class="py-name">NowFloor</tt> </tt>
+<a name="L225"></a><tt class="py-lineno">225</tt>  <tt class="py-line">                 </tt>
+<a name="L226"></a><tt class="py-lineno">226</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">Status</tt> <tt class="py-op">=</tt> <tt class="py-string">'Landing'</tt> </tt>
+<a name="L227"></a><tt class="py-lineno">227</tt>  <tt class="py-line">                <tt class="py-comment"># &#27492;&#26102;&#30340;&#26102;&#38388;&#25511;&#21046;&#21644;Elevator&#30456;&#21516;</tt> </tt>
+<a name="L228"></a><tt class="py-lineno">228</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">TimeRemain</tt> <tt class="py-op">=</tt> <tt class="py-name">elevator</tt><tt class="py-op">.</tt><tt class="py-name">BoardTime</tt> </tt>
+<a name="L229"></a><tt class="py-lineno">229</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-7" class="py-name"><a title="ElevatorSimulation.Elevator
+ElevatorSimulation.Elevator.Elevator" class="py-name" href="#" onclick="return doclink('link-7', 'Elevator', 'link-0');">Elevator</a></tt> <tt class="py-op">=</tt> <tt class="py-name">elevator</tt> </tt>
+</div><a name="L230"></a><tt class="py-lineno">230</tt>  <tt class="py-line">                <tt class="py-comment">#print '%s LandingNotify %s' % (self,elevator)</tt> </tt>
+<a name="L231"></a><tt class="py-lineno">231</tt>  <tt class="py-line"> </tt>
+<a name="Customer.GetNowStatus"></a><div id="Customer.GetNowStatus-def"><a name="L232"></a><tt class="py-lineno">232</tt> <a class="py-toggle" href="#" id="Customer.GetNowStatus-toggle" onclick="return toggle('Customer.GetNowStatus');">-</a><tt class="py-line">        <tt class="py-keyword">def</tt> <a class="py-def-name" href="ElevatorSimulation.Customer.Customer-class.html#GetNowStatus">GetNowStatus</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Customer.GetNowStatus-collapsed" style="display:none;" pad="+++" indent="++++++++++++"></div><div id="Customer.GetNowStatus-expanded"><a name="L233"></a><tt class="py-lineno">233</tt>  <tt class="py-line">                <tt class="py-docstring">''' &#33719;&#24471;&#24403;&#21069;&#39038;&#23458;&#29366;&#24577; </tt> </tt>
+<a name="L234"></a><tt class="py-lineno">234</tt>  <tt class="py-line"><tt class="py-docstring">                        </tt> </tt>
+<a name="L235"></a><tt class="py-lineno">235</tt>  <tt class="py-line"><tt class="py-docstring">                        @rtype: tuple</tt> </tt>
+<a name="L236"></a><tt class="py-lineno">236</tt>  <tt class="py-line"><tt class="py-docstring">                        @return: &#24403;&#21069;&#29366;&#24577;,(ID,Status,NowFloor,DestFloor,LaunchNum,InRequestTime)</tt> </tt>
+<a name="L237"></a><tt class="py-lineno">237</tt>  <tt class="py-line"><tt class="py-docstring">                </tt> </tt>
+<a name="L238"></a><tt class="py-lineno">238</tt>  <tt class="py-line"><tt class="py-docstring">                '''</tt> </tt>
+<a name="L239"></a><tt class="py-lineno">239</tt>  <tt class="py-line">                <tt class="py-keyword">return</tt> <tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">ID</tt><tt class="py-op">,</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">Status</tt><tt class="py-op">,</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">NowFloor</tt><tt class="py-op">,</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">DestFloor</tt><tt class="py-op">,</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">LaunchNum</tt><tt class="py-op">,</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">InRequestTime</tt><tt class="py-op">)</tt> </tt>
+</div></div><a name="L240"></a><tt class="py-lineno">240</tt>  <tt class="py-line">         </tt>
+<a name="L241"></a><tt class="py-lineno">241</tt>  <tt class="py-line"><tt class="py-keyword">if</tt> <tt class="py-name">__name__</tt> <tt class="py-op">==</tt> <tt class="py-string">'__main__'</tt><tt class="py-op">:</tt> </tt>
+<a name="L242"></a><tt class="py-lineno">242</tt>  <tt class="py-line">        <tt class="py-keyword">from</tt> <tt id="link-8" class="py-name"><a title="ElevatorSimulation.Elevator
+ElevatorSimulation.Elevator.Elevator" class="py-name" href="#" onclick="return doclink('link-8', 'Elevator', 'link-0');">Elevator</a></tt> <tt class="py-keyword">import</tt> <tt id="link-9" class="py-name"><a title="ElevatorSimulation.Elevator
+ElevatorSimulation.Elevator.Elevator" class="py-name" href="#" onclick="return doclink('link-9', 'Elevator', 'link-0');">Elevator</a></tt> </tt>
+<a name="L243"></a><tt class="py-lineno">243</tt>  <tt class="py-line">        <tt class="py-name">eve</tt> <tt class="py-op">=</tt> <tt id="link-10" class="py-name"><a title="ElevatorSimulation.Elevator
+ElevatorSimulation.Elevator.Elevator" class="py-name" href="#" onclick="return doclink('link-10', 'Elevator', 'link-0');">Elevator</a></tt><tt class="py-op">(</tt><tt class="py-string">'E0'</tt><tt class="py-op">,</tt><tt class="py-name">range</tt><tt class="py-op">(</tt><tt class="py-number">1</tt><tt class="py-op">,</tt><tt class="py-number">41</tt><tt class="py-op">)</tt><tt class="py-op">,</tt><tt class="py-number">10</tt><tt class="py-op">,</tt><tt class="py-name">InitFloor</tt> <tt class="py-op">=</tt> <tt class="py-number">1</tt><tt class="py-op">,</tt><tt class="py-name">Speed</tt> <tt class="py-op">=</tt> <tt class="py-number">2</tt><tt class="py-op">,</tt><tt class="py-name">BoardTime</tt> <tt class="py-op">=</tt> <tt class="py-number">2</tt><tt class="py-op">)</tt> </tt>
+<a name="L244"></a><tt class="py-lineno">244</tt>  <tt class="py-line">        <tt class="py-name">cust</tt> <tt class="py-op">=</tt> <tt id="link-11" class="py-name" targets="Module ElevatorSimulation.Customer=ElevatorSimulation.Customer-module.html,Class ElevatorSimulation.Customer.Customer=ElevatorSimulation.Customer.Customer-class.html"><a title="ElevatorSimulation.Customer
+ElevatorSimulation.Customer.Customer" class="py-name" href="#" onclick="return doclink('link-11', 'Customer', 'link-11');">Customer</a></tt><tt class="py-op">(</tt><tt class="py-number">1</tt><tt class="py-op">,</tt><tt class="py-number">5</tt><tt class="py-op">)</tt> </tt>
+<a name="L245"></a><tt class="py-lineno">245</tt>  <tt class="py-line">        <tt class="py-name">cust</tt><tt class="py-op">.</tt><tt id="link-12" class="py-name" targets="Method ElevatorSimulation.Customer.Customer.AddTimer()=ElevatorSimulation.Customer.Customer-class.html#AddTimer,Method ElevatorSimulation.CustomerControl.CustomerControl.AddTimer()=ElevatorSimulation.CustomerControl.CustomerControl-class.html#AddTimer,Method ElevatorSimulation.Elevator.Elevator.AddTimer()=ElevatorSimulation.Elevator.Elevator-class.html#AddTimer,Method ElevatorSimulation.ElevatorControl.ElevatorControl.AddTimer()=ElevatorSimulation.ElevatorControl.ElevatorControl-class.html#AddTimer,Method ElevatorSimulation.ElevatorSimulation.ElevatorSimulation.AddTimer()=ElevatorSimulation.ElevatorSimulation.ElevatorSimulation-class.html#AddTimer,Method ElevatorSimulation.Timer.Timer.AddTimer()=ElevatorSimulation.Timer.Timer-class.html#AddTimer"><a title="ElevatorSimulation.Customer.Customer.AddTimer
+ElevatorSimulation.CustomerControl.CustomerControl.AddTimer
+ElevatorSimulation.Elevator.Elevator.AddTimer
+ElevatorSimulation.ElevatorControl.ElevatorControl.AddTimer
+ElevatorSimulation.ElevatorSimulation.ElevatorSimulation.AddTimer
+ElevatorSimulation.Timer.Timer.AddTimer" class="py-name" href="#" onclick="return doclink('link-12', 'AddTimer', 'link-12');">AddTimer</a></tt><tt class="py-op">(</tt><tt class="py-number">1</tt><tt class="py-op">)</tt> </tt>
+<a name="L246"></a><tt class="py-lineno">246</tt>  <tt class="py-line">        <tt class="py-name">cust</tt><tt class="py-op">.</tt><tt id="link-13" class="py-name"><a title="ElevatorSimulation.Customer.Customer.AddTimer
+ElevatorSimulation.CustomerControl.CustomerControl.AddTimer
+ElevatorSimulation.Elevator.Elevator.AddTimer
+ElevatorSimulation.ElevatorControl.ElevatorControl.AddTimer
+ElevatorSimulation.ElevatorSimulation.ElevatorSimulation.AddTimer
+ElevatorSimulation.Timer.Timer.AddTimer" class="py-name" href="#" onclick="return doclink('link-13', 'AddTimer', 'link-12');">AddTimer</a></tt><tt class="py-op">(</tt><tt class="py-number">2</tt><tt class="py-op">)</tt> </tt>
+<a name="L247"></a><tt class="py-lineno">247</tt>  <tt class="py-line">        <tt class="py-name">cust</tt><tt class="py-op">.</tt><tt id="link-14" class="py-name"><a title="ElevatorSimulation.Customer.Customer.AddTimer
+ElevatorSimulation.CustomerControl.CustomerControl.AddTimer
+ElevatorSimulation.Elevator.Elevator.AddTimer
+ElevatorSimulation.ElevatorControl.ElevatorControl.AddTimer
+ElevatorSimulation.ElevatorSimulation.ElevatorSimulation.AddTimer
+ElevatorSimulation.Timer.Timer.AddTimer" class="py-name" href="#" onclick="return doclink('link-14', 'AddTimer', 'link-12');">AddTimer</a></tt><tt class="py-op">(</tt><tt class="py-number">3</tt><tt class="py-op">)</tt> </tt>
+<a name="L248"></a><tt class="py-lineno">248</tt>  <tt class="py-line"> </tt><script type="text/javascript">
+<!--
+expandto(location.href);
+// -->
+</script>
+</pre>
+<br />
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="ElevatorSimulation-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+      <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1 on Sun Jan 13 22:32:58 2013
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>
